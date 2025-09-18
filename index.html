@@ -1,11 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+        <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+   
+      <div class="row">
+        <div class="sidebar col-lg-2">
+         
+      <div class="logo">
+        <div class="icon"><p>G</p></div>
+        <div class="logo-text"><p>Goodfood</p></div>
+      </div>
+      <div class="menu">
+        <ul class="menu-items">
+          <li class="menu-label">Menu</li>
+          <li>
+            <img
+              src="assets/icons/Chart.svg"
+              alt="Dashboard"
+              class="menu-icon"
+            />
+            <span>Dashboard</span>
+          </li>
+          <li>
+            <img src="assets/icons/Buy.svg" alt="Orders" class="menu-icon" />
+            <span>Food Order</span>
+          </li>
+          <li>
+            <img
+              src="assets/icons/Document.svg"
+              alt="Customers"
+              class="menu-icon"
+            />
+            <span>Manage Menu</span>
+          </li>
+          <li>
+            <img src="assets/icons/Chat.svg" alt="Chat" class="menu-icon" />
+            <span>Customer Review</span>
+          </li>
+           <li class="menu-label">Others</li>
+            <li>
+              <img
+                src="assets/icons/Setting.svg"
+                alt="Setting"
+                class="menu-icon"
+              />
+              <span>Settings</span>
+            </li>
+            <li>
+              <img
+                src="assets/icons/Wallet.svg"
+                alt="wallet"
+                class="menu-icon"
+              />
+              <span>Payment</span>
+            </li>
+            <li>
+              <img
+                src="assets/icons/Profile.svg"
+                alt="Profile"
+                class="menu-icon align"
+              />
+              <span>Accounts</span>
+            </li>
+            <li>
+              <img
+                src="assets/icons/Info Square.svg"
+                alt="help"
+                class="menu-icon"
+              />
+              <span>Help</span>
+            </li>
+          </p>
+        </ul>
+      </div>
+   
+
+        </div>
+        <div class=" main-content col-lg-10">
+           <nav>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+        <div class="searchbar">
+          <input type="text" placeholder="Search " />
+          <img src="assets/icons/Icon.svg" alt="search" class="search-icon" />
+        </div>
+        <div class="account">
+          <div class="acc-icon">
+            <img src="assets/icons/Emoticon.png" alt="burger">
+          </div>
+          <div class="acc-info"><p>Delicious Burger</p></div>
+          <div class="dropdown">
+            <img src="assets/icons/chevron_down.jpg" alt="dropdown">
+            <div class="content">
+              
+              <a href="">Orders</a>
+              <a href="">Accounts</a>
+            
+            </div>
+          </div>
+          <div class="notif-icon">
+            <img src="assets/icons/Notif Icon.jpg" alt="notification">
+          </div>
+        </div>
+          </nav>
+          <div class="container ms-3 mt-4">
+            <div class="row">
+          <div class="col-lg-8 bar-graph">
+            <div class="title">
+            <p>Dashboard</p>
+          </div>
+           <div class="rev-card">
+          <div class="rev">
+            <p>Revenue</p>
+            <button class="btn">View report </button>
+          </div>
+          <div class="sub-text">
+            <h2>IDR 7.852.000</h2>
+            <img src="assets/icons/Arrow Up.png" alt=""> <span class="up">2.1%</span><span class="line"> vs last week</span>
+          </div>
+          <div class="sales-text">
+            <p>Sales from 1-12 Dec,2020</p>
+          </div>
+          <div id="bar-chart"></div>
+        </div>
+          </div>
+
+          <div class="col-lg-4  pie-chart">
+            <div class="order-card">
+          <div class="order">
+            <p>Order Time</p>
+            <button class="btn">View Order</button>
+          </div>
+          <div class="sub-text">
+               <p>From 1-6 Dec,2020</p>
+            </div>
+            <div id="pie-chart"></div>
+        </div>
+          </div>
+
+            </div>
+            <div class="row second-row">
+              <div class="col-lg-4 area">
+                 <div class="area-card">
+            <div class="area-text">
+              <p>Your Rating</p>
+              <div class="area-info">
+                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+              </div>
+            </div>
+            <div id="area-chart"></div>
+          </div>
+              </div>
+              <div class="col-lg-4  middle">
+                <div class="order-list">
+            <div class="list-title">
+              <p>Most Ordered Food</p>
+              <div class="area-info">
+                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+              </div>
+            </div>
+            <ul class="food-list">
+                <li>
+                   <img src="assets/icons/Group 245.jpg" alt="Fresh Salad Bowl">
+                   <span class="food-name">Fresh Salad Bowl</span>
+                   <span class="price">IDR 45.000</span>
+                </li>
+                <li>
+                  <img src="assets/icons/Group 23.png" alt="Chicken Noodles">
+                  <span class="food-name">Chicken Noodles</span>
+                  <span class="price">IDR 75.000</span>
+                </li>
+                <li>
+                  <img src="assets/icons/Group 23.png" alt="Smoothie Fruits">
+                   <span class="food-name">Smoothie Fruits</span>
+                   <span class="price">IDR 45.000</span>
+                </li>
+                <li>
+                  <img src="assets/icons/Group 23.png" alt="Hot Chicken Wings">
+                  <span class="food-name">Hot Chicken Wings</span>
+                  <span class="price">IDR 45.000</span>
+
+                </li>
+                
+            </ul>
+          </div>
+              </div>
+              <div class="col-lg-4  end">
+                 <div class="line-card">
+            <div class="order-title">
+              <div class="title-btn">
+                <p>Orders</p>
+                <button>View Order</button>
+              </div>
+              <div class="ord-num">
+                <h2>2.568</h2>
+                 <img src="assets/icons/Arrow Down.jpg" alt=""> <span class="down">2.1%</span><span class="line"> vs last week</span>
+
+              </div>
+              <div class="sales-text">
+            <p>Sales from 1-12 Dec,2020</p>
+          </div>
+            </div>
+            <div id="line-chart"></div>
+          </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     
-</body>
+    <!-- Bootstrap JS -->
+    
+    <script src="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="assets/js/barChart.js"></script>
+    <script src="assets/js/pieChart.js"></script>
+    <script src="assets/js/areaChart.js"></script>
+    <script src="assets/js/lineChart.js"></script>
+    <script>const hamburger = document.getElementById("hamburger");
+    const sidebar = document.querySelector(".sidebar");
+
+     hamburger.addEventListener("click", () => {
+       sidebar.classList.toggle("active");
+});
+</script>
+  </body>
 </html>
