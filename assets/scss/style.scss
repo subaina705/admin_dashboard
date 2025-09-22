@@ -49,9 +49,10 @@ $buttons: #dde4f0;
     p {
       margin: 0;
     }
-    .close-btn {
-      display: none;
-    }
+
+  }
+  .close-btn {
+    display: none;
   }
 
   .icon {
@@ -595,9 +596,9 @@ $buttons: #dde4f0;
     transform: translateX(0);
     max-width: 300px;
   }
-  // .sidebar .close-btn {
-  //   display: block;
-  // }
+   .sidebar .close-btn {
+     display: block;
+   }
 }
 @media (max-width: 768px) {
   .searchbar {

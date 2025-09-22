@@ -27,7 +27,7 @@
 .sidebar .logo p {
   margin: 0;
 }
-.sidebar .logo .close-btn {
+.sidebar .close-btn {
   display: none;
 }
 .sidebar .icon {
@@ -279,13 +279,13 @@
   letter-spacing: 0.5px;
   color: #5a6acf;
 }
+.main-content .bar-graph .rev-card .sub-text {
+  font-size: 12px;
+}
 .main-content .bar-graph .rev-card .sub-text h2 {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 5px;
-}
-.main-content .bar-graph .rev-card .sub-text {
-  font-size: 12px;
 }
 .main-content .bar-graph .rev-card .sub-text .up {
   color: #149d52;
@@ -475,6 +475,9 @@
   .sidebar.active {
     transform: translateX(0);
     max-width: 300px;
+  }
+  .sidebar .close-btn {
+    display: block;
   }
 }
 @media (max-width: 768px) {
