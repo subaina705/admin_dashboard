@@ -27,6 +27,9 @@
 .sidebar .logo p {
   margin: 0;
 }
+.sidebar .logo .close-btn {
+  display: none;
+}
 .sidebar .icon {
   width: 24px;
   height: 24px;
@@ -101,7 +104,7 @@
 }
 .main-content nav .searchbar {
   position: relative;
-  width: 582px;
+  width: 60%;
   height: 32px;
 }
 .main-content nav .searchbar input {
@@ -142,6 +145,7 @@
 .main-content nav .account .dropdown .content {
   text-align: center;
   display: none;
+  background-color: white;
   position: absolute;
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -152,10 +156,10 @@
   color: #000000;
   text-decoration: none;
   padding: 5px 13px;
-  margin: 6px;
+  margin: 3px;
   font-size: 12px;
   letter-spacing: 0.5px;
-  opacity: 70%;
+  opacity: 80%;
   border-bottom: 1px solid #dde4f0;
 }
 .main-content nav .account .dropdown .content a:hover {
@@ -193,6 +197,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.main-content nav .account .notif-icon .d-content {
+  display: none;
+  position: absolute;
+  min-width: 173px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  top: 28px;
+  right: 2px;
+  background: #fff;
+}
+.main-content nav .account .notif-icon .d-content a {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 13px;
+  margin: 3px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  opacity: 80%;
+  border-bottom: 1px solid #dde4f0;
+}
+.main-content nav .account .notif-icon .d-content a img {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+.main-content nav .account .notif-icon .d-content a:hover {
+  background-color: #dde4f0;
+  opacity: 100%;
+  color: #5a6acf;
+  border-radius: 5px;
+}
+.main-content nav .account .notif-icon:hover .d-content {
+  display: block;
 }
 .main-content nav .account .notif-icon img {
   width: 20px;
@@ -241,13 +279,13 @@
   letter-spacing: 0.5px;
   color: #5a6acf;
 }
-.main-content .bar-graph .rev-card .sub-text {
-  font-size: 12px;
-}
 .main-content .bar-graph .rev-card .sub-text h2 {
   font-weight: 500;
   font-size: 20px;
   margin-bottom: 5px;
+}
+.main-content .bar-graph .rev-card .sub-text {
+  font-size: 12px;
 }
 .main-content .bar-graph .rev-card .sub-text .up {
   color: #149d52;
@@ -401,6 +439,22 @@
 }
 
 @media (max-width: 992px) {
+  nav {
+    padding: 0 !important;
+    padding-top: 10px !important;
+  }
+  .bar-graph .rev-card {
+    border-right: none !important;
+    border-bottom: 1px solid #dbe5eb !important;
+  }
+  .area-card {
+    border-right: none !important;
+    border-bottom: 1px solid #dbe5eb !important;
+  }
+  .order-list {
+    border-right: none !important;
+    border-bottom: 1px solid #dbe5eb !important;
+  }
   .hamburger {
     display: block !important;
     font-size: 24px;
@@ -421,6 +475,64 @@
   .sidebar.active {
     transform: translateX(0);
     max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .searchbar {
+    width: 50% !important;
+  }
+  .account {
+    gap: 5px !important;
+  }
+  .acc-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .acc-icon img {
+    width: 16px !important;
+    height: 16px !important;
+  }
+  .notif-icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  .notif-icon img {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
+@media (max-width: 576px) {
+  .hamburger {
+    font-size: 20px !important;
+    padding: 0 !important;
+  }
+  .searchbar input {
+    padding: 5px 25px 5px 9px !important;
+  }
+  .acc-icon,
+  .acc-info,
+  .dropdown {
+    display: none;
+  }
+  .rev p {
+    font-size: 12px !important;
+  }
+  .sub-text h2 {
+    font-size: 17px !important;
+  }
+  button {
+    font-size: 10px !important;
+    padding: 6px 10px !important;
+  }
+  .sales-text {
+    margin-top: 3px !important;
+    font-size: 10px !important;
+  }
+  .order-card .sub-text {
+    margin-top: -8px !important;
+  }
+  .order-card .order p {
+    font-size: 14px !important;
   }
 }
 
